@@ -18,6 +18,7 @@
     <title><%-: post.title | cdata %></title>
     <link href="<%- encodeURI(post.permalink) %>"/>
     <id><%- post.permalink %></id>
+    <featured><%= post.featured %></featured>
     <published><%= post.date.toISOString() %></published>
     <updated><%= post.updated.toISOString() %></updated>
     <content type="html"><%-: post.content | cdata %></content>
